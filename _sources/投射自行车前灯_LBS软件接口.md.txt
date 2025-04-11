@@ -1,0 +1,61 @@
+# 投射自行车前灯_LBS软件接口
+
+---
+
+## 1. 4-wire_SPI 软件接口
+
+![SPI](/_static/img/4-wire_SPI.png)
+
+### 控制信号逻辑
+
+| 信号 | 状态 | 说明 |
+|-----|----|-----|
+| **CS#** | LOW | 开始通信 |
+| **D/C#** | LOW| 写命令 HIGH: 写数据 |
+| **SDIN** | 0/1 | 数据输入 |
+| **SCLK** | 0/1 | 时钟信号 |
+
+### 通信过程
+
+- **SDIN** 的数据在 **SCLK** 的 **上升沿** 被采样
+- 每8个时钟周期传送 1 位，从 **D7 → D0** 低位
+- 每8个时钟转8次（一个字节），根据 **D/C#** 进行写入
+- 只支持 **写操作**，不支持读
+
+### 通信时序简要
+
+1. 拉低 **CS#** ，开始通信
+2. 设置 **D/C#** (写命令或写数据)
+3. 发送数据 (MSB 先送，从 D7 到 D0)
+4. 重复 2-3 次完成一段数据传送
+5. 拉高 **CS#** ，结束通信
+
+---
+
+## 2. 4-wire_SPI 通信使用例（伪代码）
+
+```c
+void spi_write(int is_command, uint8_t byte_data)
+{
+    set_CS_low();
+
+    if (is_command)
+        set_DC_low();   // 写命令
+    else
+        set_DC_high();  // 写数据
+
+    for (int i = 7; i >= 0; i--)
+    {
+        set_SCLK_low();
+
+        if ((byte_data >> i) & 0x01)
+            set_SDIN_high();
+        else
+            set_SDIN_low();
+
+        set_SCLK_high();   // 在上升沿被采样
+    }
+
+    set_CS_high();
+}
+```

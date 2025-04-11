@@ -1,0 +1,13 @@
+# 参考资料
+
+- [LBS投影参考原理图](/_static/doc/LBS原理图.pdf)
+- [nRF5340手册](https://docs.nordicsemi.com/category/nrf5340-category)
+- [nRF5340参考原理图](/_static/doc/PCA10095_Schematic_And_PCB.pdf)
+- [nRF54L15手册](https://docs.nordicsemi.com/category/nRF54L15-category)
+- [nRF54L15参考原理图](/_static/doc/PCA10156_Schematic_And_PCB.pdf)
+- [SSD1306(单色 128 x 64 x 1 bits)](/_static/doc/SSD1306.pdf)
+- [ST7735(彩色 132 x 162 x 18 bits)](/_static/doc/ST7735.pdf)
+- [ST7789(彩色 240 x 320 x 18 bit)](/_static/doc/ST7789.pdf)
+- [ST7701(彩色 480 x 864 x 24 bit)](/_static/doc/ST7789.pdf)
+- [Arduino TFT 参考手册](https://docs.arduino.cc/retired/getting-started-guides/TFT/)
+- [Arduino TFT 参考代码](https://github.com/arduino-libraries/TFT)
