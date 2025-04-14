@@ -6,14 +6,8 @@
 Here's my admonition content.{sup}`1`
 :::
 
-::::{tab-set}
-
-:::{tab-item} Label1
-Content 1
-:::
-
-:::{tab-item} Label2
-Content 2
-:::
-
-::::
+```javascript
+$(document).ready(function () {
+    alert('RUNOOB');
+});
+```

@@ -17,7 +17,9 @@ release = '1.0.0'
 extensions = [
     'myst_parser',
     "sphinx_design",
+    'sphinx_copybutton',
     'sphinx_wagtail_theme',
+    'sphinx.ext.todo',
     'sphinx.ext.githubpages',
 ]
 
