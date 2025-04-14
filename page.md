@@ -6,14 +6,6 @@
 Here's my admonition content.{sup}`1`
 :::
 
-:::{card} Card Title
-Header
-^^^
-Card content
-+++
-Footer
-:::
-
 ::::{tab-set}
 
 :::{tab-item} Label1
