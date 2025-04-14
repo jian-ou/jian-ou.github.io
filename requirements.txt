@@ -1,0 +1,5 @@
+sphinx
+recommonmark
+sphinx-wagtail-theme
+sphinx-design
+myst-parser
