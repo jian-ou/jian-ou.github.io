@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jianou WebSite-首页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/achievements-data.js"></script>
+    <script src="js/skills-data.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="active">首页</a>
+                <a href="achievements.html">成果展示</a>
+                <a href="blog/blog.html">博客</a>
+                <a href="about.html">关于我</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero hero-rounded" style="position:relative;overflow:hidden;">
+            <!-- SVG动态电路背景 -->
+            <svg class="hero-circuit-bg" width="100%" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:320px;z-index:0;pointer-events:none;">
+                <g stroke="#00ff9d" stroke-width="2" opacity="0.13">
+                    <polyline points="80,60 300,60 300,200 500,200"/>
+                    <polyline points="500,120 700,120 700,260 900,260"/>
+                    <circle cx="300" cy="60" r="8" fill="#7c3aed"/>
+                    <circle cx="700" cy="120" r="8" fill="#7c3aed"/>
+                </g>
+                <g stroke="#7c3aed" stroke-width="1.5" opacity="0.10">
+                    <polyline points="180,180 400,180 400,40 600,40"/>
+                    <polyline points="600,100 800,100 800,220 1000,220"/>
+                </g>
+            </svg>
+            <div class="hero-content" style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:1.5rem;">
+                <img src="assets/profile.png" alt="个人头像" style="width:110px;height:110px;border-radius:50%;box-shadow:0 4px 24px rgba(124,58,237,0.18);border:3px solid #7c3aed;background:#23203a;object-fit:cover;">
+                <h1 style="font-size:2.4rem;letter-spacing:2px;">欢迎来到我的个人空间</h1>
+                <p style="font-size:1.15rem;color:var(--text-secondary);max-width:420px;">这里展示了我的编程作品集和专业技能，专注于嵌入式系统、智能硬件与前沿软件开发。</p>
+                <div style="display:flex;gap:1.2rem;">
+                    <a href="#skills" class="hero-btn" style="background:var(--accent-color);color:#fff;padding:0.7rem 2rem;border-radius:24px;font-weight:600;font-size:1.1rem;text-decoration:none;box-shadow:0 2px 8px rgba(124,58,237,0.10);transition:background 0.2s;">了解我的技术栈</a>
+                    <a href="#achievements" class="hero-btn" style="background:var(--accent-color2);color:#18122b;padding:0.7rem 2rem;border-radius:24px;font-weight:600;font-size:1.1rem;text-decoration:none;box-shadow:0 2px 8px rgba(0,255,157,0.10);transition:background 0.2s;">查看成果展示</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects" id="achievements">
+            <div class="skills-wrapper" style="position:relative;overflow:hidden;">
+                <!-- SVG电路动画背景 -->
+                <svg class="circuit-bg" width="100%" height="180" viewBox="0 0 900 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:180px;z-index:0;pointer-events:none;">
+                    <g stroke="#00ff9d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.18">
+                        <polyline points="30,40 120,40 120,120 220,120"/>
+                        <polyline points="220,60 320,60 320,160 420,160"/>
+                        <polyline points="420,100 520,100 520,40 620,40"/>
+                        <polyline points="620,120 720,120 720,60 820,60"/>
+                        <circle cx="120" cy="40" r="6" fill="#7c3aed"/>
+                        <circle cx="320" cy="60" r="6" fill="#7c3aed"/>
+                        <circle cx="520" cy="40" r="6" fill="#7c3aed"/>
+                        <circle cx="720" cy="60" r="6" fill="#7c3aed"/>
+                    </g>
+                    <g stroke="#7c3aed" stroke-width="1.5" opacity="0.12">
+                        <polyline points="60,100 160,100 160,20 260,20"/>
+                        <polyline points="260,80 360,80 360,140 460,140"/>
+                        <polyline points="460,60 560,60 560,120 660,120"/>
+                        <polyline points="660,20 760,20 760,100 860,100"/>
+                    </g>
+                </svg>
+                <h2>成果展示</h2>
+                <div class="project-grid achievements-grid">
+                    <!-- 项目卡片将通过 JavaScript 动态加载 -->
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skills-wrapper" style="position:relative;overflow:hidden;">
+                <!-- SVG芯片/电路板风格背景纹理 -->
+                <svg class="skills-bg" width="100%" height="120" viewBox="0 0 900 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:120px;z-index:0;pointer-events:none;">
+                    <g stroke="#7c3aed" stroke-width="2" opacity="0.13">
+                        <rect x="60" y="30" width="120" height="60" rx="12"/>
+                        <rect x="220" y="20" width="80" height="40" rx="8"/>
+                        <rect x="340" y="50" width="100" height="30" rx="6"/>
+                        <rect x="480" y="30" width="60" height="60" rx="10"/>
+                        <rect x="580" y="20" width="120" height="40" rx="10"/>
+                        <rect x="740" y="50" width="80" height="30" rx="8"/>
+                    </g>
+                    <g stroke="#00ff9d" stroke-width="1.5" opacity="0.10">
+                        <line x1="120" y1="30" x2="120" y2="10"/>
+                        <line x1="180" y1="90" x2="180" y2="110"/>
+                        <line x1="260" y1="20" x2="260" y2="5"/>
+                        <line x1="300" y1="60" x2="300" y2="100"/>
+                        <line x1="390" y1="80" x2="390" y2="110"/>
+                        <line x1="510" y1="30" x2="510" y2="10"/>
+                        <line x1="610" y1="20" x2="610" y2="5"/>
+                        <line x1="700" y1="60" x2="700" y2="100"/>
+                        <line x1="780" y1="80" x2="780" y2="110"/>
+                    </g>
+                    <g fill="#7c3aed" opacity="0.18">
+                        <circle cx="120" cy="30" r="4"/>
+                        <circle cx="180" cy="90" r="4"/>
+                        <circle cx="260" cy="20" r="3"/>
+                        <circle cx="300" cy="60" r="3"/>
+                        <circle cx="390" cy="80" r="3"/>
+                        <circle cx="510" cy="30" r="4"/>
+                        <circle cx="610" cy="20" r="3"/>
+                        <circle cx="700" cy="60" r="3"/>
+                        <circle cx="780" cy="80" r="3"/>
+                    </g>
+                </svg>
+                <h2>技术栈</h2>
+                <div class="skills-grid">
+                    <!-- 技能标签将通过 JavaScript 动态加载 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="enhanced-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2025 个人作品集. All rights reserved.</p>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:j2090995961@gmail.com" class="contact-link">
+                    <span class="iconify contact-icon" data-icon="mdi:email"></span>
+                    j2090995961@gmail.com
+                </a>
+                <a href="https://github.com/jian-ou" class="contact-link" target="_blank">
+                    <span class="iconify contact-icon" data-icon="mdi:github"></span>
+                    GitHub
+                </a>
+                <a href="https://leetcode.cn/u/jian-ou/" class="contact-link" target="_blank">
+                    <span class="iconify contact-icon" data-icon="simple-icons:leetcode"></span>
+                    LeetCode
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

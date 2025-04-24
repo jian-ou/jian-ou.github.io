@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jianou WebSite-关于</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/skills-data.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="achievements.html">成果展示</a>
+                <a href="blog/blog.html">博客</a>
+                <a href="about.html" class="active">关于我</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="profile-container">
+                <div class="profile-content" style="background:rgba(35,32,58,0.85);border-radius:18px;box-shadow:0 4px 24px 0 rgba(124,58,237,0.10);padding:2.5rem 2rem 2rem 2rem;max-width:700px;margin:2rem auto;">
+                    <h2 style="text-align:center;color:var(--accent-color);font-size:2.2rem;letter-spacing:2px;margin-bottom:1.2rem;">关于我</h2>
+                    <div style="margin-bottom:2.2rem;">
+                        <h3 style="color:var(--accent-color2);font-size:1.3rem;margin-bottom:0.7rem;">教育背景</h3>
+                        <div class="education-item" style="background:rgba(124,58,237,0.07);border-radius:10px;padding:1rem 1.2rem;">
+                            <strong>广西科技大学</strong> | 本科<br>
+                            专业：电子科学与技术<br>
+                            就读时间：2018.07 - 2022.06
+                        </div>
+                    </div>
+                    <div style="margin-bottom:2.2rem;">
+                        <h3 style="color:var(--accent-color2);font-size:1.3rem;margin-bottom:0.7rem;">项目经验</h3>
+                        <ul style="padding-left:1em;display:flex;flex-direction:column;gap:1.1rem;">
+                            <li style="background:rgba(0,255,157,0.06);border-radius:8px;padding:0.7rem 1rem;">
+                                <strong>智能物资搬运机器人</strong>（2019.06 - 2019.09）<br>
+                                <span style="color:var(--text-secondary);font-size:0.98rem;">- 使用 OpenMV 识别二维码与物料颜色，串口传输搬运信息<br>
+                                - 采用 STM32 控制网格线路导航，实现自动规划路径<br>
+                                - 控制六轴机械臂完成物料抓取与放置</span>
+                            </li>
+                            <li style="background:rgba(0,255,157,0.06);border-radius:8px;padding:0.7rem 1rem;">
+                                <strong>无接触温度测量与身份识别装置</strong>（2020.10）<br>
+                                <span style="color:var(--text-secondary);font-size:0.98rem;">- 采集人脸特征点训练 Harr 分类器进行身份识别<br>
+                                - 使用 I²C-OLED 并设计多级菜单界面进行交互</span>
+                            </li>
+                            <li style="background:rgba(0,255,157,0.06);border-radius:8px;padding:0.7rem 1rem;">
+                                <strong>WIFI 智能插座</strong>（2021.09 - 2021.10）<br>
+                                <span style="color:var(--text-secondary);font-size:0.98rem;">- 基于 ESP32 连接阿里云 MQTT 平台<br>
+                                - 实现天猫精灵语音控制插座功能</span>
+                            </li>
+                            <li style="background:rgba(0,255,157,0.06);border-radius:8px;padding:0.7rem 1rem;">
+                                <strong>Agilent 系列仪器控制与应用</strong>（2021.10 - 2021.12）<br>
+                                <span style="color:var(--text-secondary);font-size:0.98rem;">- 使用 Matlab 控制 DG4026 波形发生器<br>
+                                - 搭建简易示波器模型与 DS2202A 进行数据对比分析</span>
+                            </li>
+                            <li style="background:rgba(0,255,157,0.06);border-radius:8px;padding:0.7rem 1rem;">
+                                <strong>基于位姿估计的移动机器人设计</strong>（2020.06 - 2022.05）<br>
+                                <span style="color:var(--text-secondary);font-size:0.98rem;">- 利用 ROS 操作系统抽象硬件组件并进行仿真模拟<br>
+                                - 移植 OpenPose 到移动端，实现人体姿态估计控制机器人运动</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom:2.2rem;">
+                        <h3 style="color:var(--accent-color2);font-size:1.3rem;margin-bottom:0.7rem;">技术栈</h3>
+                        <div class="skills-grid" style="justify-content:center;"></div>
+                    </div>
+                    <div>
+                        <h3 style="color:var(--accent-color2);font-size:1.3rem;margin-bottom:0.7rem;">自我评价</h3>
+                        <ul style="padding-left:1em;display:flex;flex-direction:column;gap:0.7rem;">
+                            <li>曾任学院电气创新协会及机器人协会技术部成员</li>
+                            <li>多次进行单片机技术培训与校内电子竞赛命题</li>
+                            <li>曾作为领队参加省级与国家级电子设计与工程训练比赛</li>
+                            <li>两次获得大学生创新创业训练项目立项</li>
+                            <li>获得“争优创新”科技活动先进个人称号</li>
+                            <li>项目经验丰富，具有良好的组织沟通能力和创新意识</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="enhanced-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2025 个人作品集. All rights reserved.</p>
+            </div>
+            <div class="contact-info">
+                <a href="mailto:j2090995961@gmail.com" class="contact-link">
+                    <span class="iconify contact-icon" data-icon="mdi:email"></span>
+                    j2090995961@gmail.com
+                </a>
+                <a href="https://github.com/jian-ou" class="contact-link" target="_blank">
+                    <span class="iconify contact-icon" data-icon="mdi:github"></span>
+                    GitHub
+                </a>
+                <a href="https://leetcode.cn/u/jian-ou/" class="contact-link" target="_blank">
+                    <span class="iconify contact-icon" data-icon="simple-icons:leetcode"></span>
+                    LeetCode
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
